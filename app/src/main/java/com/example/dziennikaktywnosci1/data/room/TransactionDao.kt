@@ -20,7 +20,7 @@ TransactionDao {
     suspend fun updateTransaction(transaction: Transaction)
 
     @Delete
-    suspend fun deleteTransaction(transaction: Transaction)
+    suspend fun deleteTransaction(transaction: List<Transaction>)
 
     @Query("SELECT * FROM transactions_table ORDER BY date DESC")
     fun getAllTransaction(): Flow<List<Transaction>>
