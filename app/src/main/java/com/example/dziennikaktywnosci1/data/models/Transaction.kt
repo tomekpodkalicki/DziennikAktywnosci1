@@ -1,4 +1,4 @@
-package data.models
+package com.example.dziennikaktywnosci1.data.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
